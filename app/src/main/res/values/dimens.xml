@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginStart">16dp</dimen>
+    <dimen name="marginEnd">16dp</dimen>
+
+    //button
+    <dimen name="buttonCorners">8dp</dimen>
+    <dimen name="buttonHeight">48dp</dimen>
+    <dimen name="textInputPadding">16dp</dimen>
+</resources>

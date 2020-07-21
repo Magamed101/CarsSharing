@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="@dimen/marginStart"
+            android:layout_marginEnd="@dimen/marginEnd"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="150dp"
+                android:text="Создание аккаунта"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:hint="Введите логин"
+                style="@style/defaultTextInput">
+
+                <EditText
+                    android:id="@+id/et_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:paddingStart="@dimen/textInputPadding"
+                    android:paddingEnd="@dimen/textInputPadding"
+                    android:inputType="text"
+                    android:hint="Введите логин"
+                    android:singleLine="true"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="Введите пароль"
+                app:passwordToggleEnabled="true"
+                style="@style/defaultTextInput">
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:paddingStart="@dimen/textInputPadding"
+                    android:paddingEnd="@dimen/textInputPadding"
+                    android:inputType="textPassword"
+                    android:hint="Введите пароль"
+                    android:singleLine="true"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="Повторите пароль"
+                app:passwordToggleEnabled="true"
+                style="@style/defaultTextInput">
+
+                <EditText
+                    android:id="@+id/et_confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:paddingStart="@dimen/textInputPadding"
+                    android:paddingEnd="@dimen/textInputPadding"
+                    android:inputType="textPassword"
+                    android:hint="Повторите пароль"
+                    android:singleLine="true"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_register"
+                android:layout_marginTop="32dp"
+                android:enabled="false"
+                style="@style/defaultButtonStyle"
+                android:text="Зарегестрироваться"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        style="@style/progressBarStyle"/>
+
+</RelativeLayout>

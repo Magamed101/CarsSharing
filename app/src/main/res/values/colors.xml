@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mhBlue">#6D8BF5</color>
+    <color name="colorPrimaryDark">#4660BB</color>
+    <color name="barvinock">#EFF1F4</color>
+    <color name="white">#ffffff</color>
+    <color name="orangeRed">#FF6157</color>
+    <color name="successGreen">#42bd41</color>
+    <color name="mhDarkGrey">#333333</color>
+    <color name="mhAqua">#9AA3B0</color>
+    <color name="black">#000000</color>
+</resources>

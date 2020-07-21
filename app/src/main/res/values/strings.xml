@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CarSharing</string>
+    <string name="server_error">Произошла ошибка на сервере</string>
+    <string name="connection_error">Ошибка подключения</string>
+    <string name="unknown_error">Произошла ошибка</string>
+    <string name="unauthorized_error">Пользователь неавторизован</string>
+    <string name="not_found_error">Не найдено</string>
+</resources>
